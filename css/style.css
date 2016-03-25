@@ -161,6 +161,11 @@ header .nav_menu {
 	height: 55px;
 	background: #ececec;
 	box-shadow: 0 4px 4px rgba(31, 31, 31,0.2);
+	-moz-box-shadow: 0 4px 4px rgba(31, 31, 31,0.2);
+	-webkit-box-shadow: 0 4px 4px rgba(31, 31, 31,0.2);
+	position: relative;
+	width: 100%;
+	display: table;
 }
  .catalog {
 	width: 265px;
@@ -179,6 +184,7 @@ header .nav_menu {
 	line-height: 55px;
 	padding: 0 30px;
 	position: relative;
+	z-index: 200;
 }
 .catalog > li > a img{
 	position: absolute;
@@ -191,6 +197,9 @@ header .nav_menu {
 	display: table;
 	width: 100%;
     display: none;
+	 box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);
+	 -moz-box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);
+	 -webkit-box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);
 }
  .list_catalog > li{
 	list-style:disc;
@@ -198,8 +207,6 @@ header .nav_menu {
 	margin-left: 0;
 	font-size: 15px;
 	color: #fdc82b;
- 
- 
 }
  .list_catalog > li:last-child{
 	border-width: 0;
@@ -268,16 +275,16 @@ header .nav_menu {
 	width: 100%;
 	padding-bottom: 15px;
 }
- 
 header .nav_page {
 	display: inline-block;
 	vertical-align: top;
-	padding-left: 45px;
+	padding-left: 37px;
+	width: 935px;
 }
 header .nav_page li {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 40px;
+	margin-right: 41px;
 }
 header .nav_page li:last-child{
 	margin-right: 0;
@@ -309,8 +316,31 @@ header .nav_page .action img {
 	vertical-align: middle;
 	 
 }
-
- 
+header{
+	position: relative;
+}
+header .nav_inside{
+	position: absolute;
+	bottom: -22px;
+	right: 0;
+	left: 0;
+	z-index: 120;
+}
+header .nav_inside ul{
+	margin-left: 300px;
+}
+header .nav_inside li{
+	display: inline-block;
+	font-size: 12px;
+	margin-right: 12px;
+	color: #000;
+}
+header .nav_inside li a{
+	font-size: 12px;
+	text-decoration: none;
+	color: #5e5e5e;
+	margin-right: 5px;
+} 
 /*footer*/
 footer .footer_top {
 	background: #2e2e2e;
@@ -366,7 +396,7 @@ footer p {
 	margin-left: 40px;
 }
 footer  .container .nav_footer {
-	width: 20%;
+	width: 20.5%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -406,7 +436,8 @@ footer .container .nav_footer.catalog li:last-child  a{
 	margin-left: 10px;
 }
 footer .nav_footer.social{
-	padding-left: 50px;
+	padding-left: 35px;
+	width: 18%;
 }
 footer .nav_footer.social ul li {
 	list-style-type: none;
@@ -414,3 +445,110 @@ footer .nav_footer.social ul li {
 	display: inline-block;
 	margin-right: 12px;
 }
+footer .nav_footer.social ul li:last-child {
+	margin-right: 0;
+}
+footer{
+	padding-bottom: 30px;
+}
+/**content-catalog***/
+.content{
+	background: url(../img/bg.png);
+	display: table;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 70px;
+} 
+.content .sidebar {
+	width: 265px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -30px;
+	margin-bottom: 50px;
+}
+.content .sidebar .list_catalog {
+	display: table;
+	font-family: 'Roboto', sans-serif;	
+	position: relative;
+	z-index: 100;
+	margin-bottom: 10px;
+}
+.content .info li {
+	margin-bottom: 10px;
+}
+.content .info li a {
+	display: block;
+	height: 125px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;		
+	padding: 24px 28px; 
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;	
+}
+.content .action a{
+	background: #535353 url(../img/content/1.png) 90% center  no-repeat; 
+}
+.content .info li h4 {
+	font-size: 26px;
+}
+.content  .info li h5 {
+	font-size: 14px;
+	margin-top: 8px;
+}
+.content .delivery a {
+	background: #4a5584 url(../img/content/2.png) 90% center  no-repeat; 
+}
+.content .payment a {
+	background: #f8a047 url(../img/content/3.png) 90% center  no-repeat; 	
+}
+
+
+/************************/
+.list_content{
+	width: 930px;
+	display: inline-block;
+	padding-left: 25px;
+
+}
+.list_content li{
+	display: inline-block;
+	vertical-align: top;
+    width: 295px;
+	margin-right: 10px;
+	 box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);
+	 -moz-box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);
+	 -webkit-box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);	
+	margin-bottom: 10px;
+}
+.list_content li:nth-child(3n){
+	margin-right: 0;
+}
+.list_content li a{
+	display: block;
+    height: 317px;	
+	background: #fff;
+	text-decoration: none;
+}
+.list_content li a .image{
+	display: block;
+	height: 262px;
+	overflow: hidden;
+	text-align: center;
+	line-height: 262px;
+}
+.list_content li a .image img{
+	vertical-align: middle;
+}
+.list_content li .title{
+	font-size: 15px;
+	display: block;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	text-transform: uppercase;
+	background: #ff4c2d;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+} 
