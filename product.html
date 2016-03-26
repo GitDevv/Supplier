@@ -340,19 +340,28 @@
 					<li class="cost">
 						<h5>Цена:     </h5>
 						<h6>6 489 руб.</h6>
+						<input type="hidden" value="6489">
 					</li>
 					<li class="discount">
 						<h5>Скидка:    </h5>
 						<h6>590 руб.</h6>
+						<input type="hidden" value="590">
 					</li>
 					<li class="new_cost">
-						<h5>Цена:     </h5>
-						<h6>6 489 руб.</h6>
+						<h5>Ваша цена:     </h5>
+						<h6><span>5 899</span> руб.</h6>
+						<input type="hidden" value="5899">
 					</li>
 					<li class="num_prod">
 						<h5>Количество: </h5>
-						<h6>6 489 руб.</h6>
+						<h6 class="cont_number">
+							<a id="down" href="javascript:void(0)" onclick="updateSpinner(this);">-</a>
+							<input id="content_num" value="1" min="1"   type="text" /><a id="up" href="javascript:void(0)"  onclick="updateSpinner(this);">+</a>
+						</h6>
 					</li>
+					<li>
+ 						<button class="to_cart">в корзину</button>
+					</li>					
 				</ul>
 			</div>
  		</div>
@@ -513,6 +522,8 @@
 <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
  
 <script src="js/script.js"></script>
+ 
+ 
  
 <!-- endbuild -->
 </body>
