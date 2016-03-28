@@ -61,10 +61,12 @@
  				</form>
  				<div class="cart">
  					<div class="cost">
- 						<span>189 000 </span>руб
+ 						<span class="fullcost">0 </span> руб
+ 						<input type="hidden" class="in_full_cost" value="0">
  					</div>
  					<div class="number">
- 						<span>4 </span>
+ 						<span class="fullnumber">0 </span>
+ 						<input type="hidden" class="in_full_num" value="0">
  						товара	
  					</div>
  						
@@ -76,10 +78,10 @@
  		<div class="container">
  			<ul class="catalog">
  				<li>
- 					<a href="javascript:void(0)">каталог <img src="img/header/arrow.png" alt=""></a>
+ 					<a href="Catalog.html">каталог <img src="img/header/arrow.png" alt=""></a>
  					<ul class="list_catalog">
  						<li  >
- 							<a href="#"><h5>Электроинструмент</h5></a>
+ 							<a href="Electric_tools.html"><h5>Электроинструмент</h5></a>
  							<ul class="list_lvl2">
  								<li>
  									<a href=""><h5>Перфораторы</h5></a>
@@ -213,7 +215,7 @@
  			</ul>
  			<ul class="nav_page">
  				<li>
- 					<a href="#">главная</a>
+ 					<a href="index.html">главная</a>
  				</li>
  				<li>
  					<a href="#">о магазине</a>
@@ -245,11 +247,11 @@
  				<img src="img/header/arr_page.png" alt="">
  			</li>
  			<li>
- 				<a href="index.html">Каталог</a>
+ 				<a href="Catalog.html">Каталог</a>
  				<img src="img/header/arr_page.png" alt="">
  			</li>
  			<li>
- 				<a href="index.html">Электроинструмент</a>
+ 				<a href="Electric_tools.html">Электроинструмент</a>
  				<img src="img/header/arr_page.png" alt="">
  			</li>
  			<li>
@@ -312,7 +314,7 @@
 						<h5>Рейтинг:</h5>
 						<!--[if lte IE 7]><style>#reviewStars-input{display:none}</style><![endif]-->
 
-						<div id="reviewStars-input">
+						<div class="reviewStars-input">
 							<input id="star-4" type="radio" name="reviewStars"/>
 							<label title="gorgeous" for="star-4"></label>
 
@@ -337,7 +339,7 @@
 						<h5>Производитель:</h5>
 						<h6>Электроинструмент ЗУБР</h6>
 					</li>
-					<li class="cost">
+					<li class="cost_li">
 						<h5>Цена:     </h5>
 						<h6>6 489 руб.</h6>
 						<input type="hidden" value="6489">
@@ -363,13 +365,250 @@
  						<button class="to_cart">в корзину</button>
 					</li>					
 				</ul>
-			</div>
+			</div>	
+			<div id="tab-product" class="tab-product">
+			  <ul class='tabs'>
+				<li class='tab'><a href="#tabs1">описание</a></li>
+				<li class='tab'><a href="#tabs2">Характеристика</a></li>
+				<li class='tab'><a href="#tabs3">комплектация</a></li>
+			  </ul>
+			  <div id="tabs1">
+				<table cellspacing="0"   >
+					<tr>
+						<td   >Потребляемая мощность </td>
+						<td>– 520 Вт</td>
+					</tr>
+					<tr>
+						<td>Сверление стали: </td>
+						<td>10 мм</td>
+					</tr>
+					<tr>
+						<td>Сверление бетон: </td>
+						<td>13 мм</td>
+					</tr>
+					<tr>
+						<td>Сверление дерево:  </td>
+						<td>20 мм</td>
+					</tr>
+					<tr>
+						<td>Частота вращения: </td>
+						<td>0-3000 об/мин</td>
+					</tr>
+					<tr>
+						<td>Частота ударов:  </td>
+						<td>0-48000 уд/мин</td>
+					</tr>																				
+				</table>
+			  </div>
+			  <div id="tabs2">
+				<table cellspacing="0"   >
+					<tr>
+						<td   >Потребляемая мощность </td>
+						<td>– 520 Вт</td>
+					</tr>
+					<tr>
+						<td>Сверление стали: </td>
+						<td>10 мм</td>
+					</tr>
+					<tr>
+						<td>Сверление бетон: </td>
+						<td>13 мм</td>
+					</tr>
+					<tr>
+						<td>Сверление дерево:  </td>
+						<td>20 мм</td>
+					</tr>
+					<tr>
+						<td>Частота вращения: </td>
+						<td>0-3000 об/мин</td>
+					</tr>
+					<tr>
+						<td>Частота ударов:  </td>
+						<td>0-48000 уд/мин</td>
+					</tr>																				
+				</table>
+			  </div>
+			  <div id="tabs3">
+				<table cellspacing="0"   >
+					<tr>
+						<td   >Потребляемая мощность </td>
+						<td>– 520 Вт</td>
+					</tr>
+					<tr>
+						<td>Сверление стали: </td>
+						<td>10 мм</td>
+					</tr>
+					<tr>
+						<td>Сверление бетон: </td>
+						<td>13 мм</td>
+					</tr>
+					<tr>
+						<td>Сверление дерево:  </td>
+						<td>20 мм</td>
+					</tr>
+					<tr>
+						<td>Частота вращения: </td>
+						<td>0-3000 об/мин</td>
+					</tr>
+					<tr>
+						<td>Частота ударов:  </td>
+						<td>0-48000 уд/мин</td>
+					</tr>																				
+				</table>
+			  </div>		   
+			</div> 					
+ 		</div>
+ 		<div class="subscription_prod">
+ 			<h3>подпишитесь на рассылку и получайте скидки</h3>
+ 			<form>
+ 				<input type="email" name="email" placeholder="Введите Ваш email" required>
+ 				<button></button>
+ 			</form>
+ 		</div>
+ 		<div class="to_buy_this">
+ 			<div class="title">к этому товару покупают</div>
+ 			<ul class="list">
+ 				<li class="list_it_prod">
+ 					<div class="image">
+ 						<a href="">
+ 							<img src="img/content/product/p1.png" alt="">
+ 						</a>
+ 					</div>
+ 					<div class="reviewStars-input">
+							<input id="star-9" type="radio" name="reviewStars"/>
+							<label title="gorgeous" for="star-9"></label>
+
+							<input id="star-8" type="radio" name="reviewStars"/>
+							<label title="good" for="star-8"></label>
+
+							<input id="star-7" type="radio" name="reviewStars"/>
+							<label title="regular" for="star-7"></label>
+
+							<input id="star-6" type="radio" name="reviewStars"/>
+							<label title="poor" for="star-6"></label>
+
+							<input id="star-5" type="radio" name="reviewStars"/>
+							<label title="bad" for="star-5"></label>
+						</div> 	
+ 					<p>Перфоратор ЗУБР SDS-plus, 2,7 <br>Дж, 0-1000 об/мин, 0-4850 <br> уд/мин, 650Вт, кейс</p>
+						 				
+					<div class="costt">
+						<h6>1 258 руб.</h6>
+						<input type="hidden" value="1258">
+					</div>
+					<div class="new_costt">
+						<h6><span>1 258</span> руб.</h6>
+						<input type="hidden" value="1258" class="valProduct">>
+					</div> 	
+					<button class="to_cartt" id="toCart"  >в корзину</button>				
+ 				</li>
+ 				<li class="list_it_prod">
+ 					<div class="image">
+ 						<a href="">
+ 							<img src="img/content/product/p2.png" alt="">
+ 						</a>
+ 					</div>
+ 					<div class="reviewStars-input">
+							<input id="star-14" type="radio" name="reviewStars"/>
+							<label title="gorgeous"  ></label>
+
+							<input id="star-13" type="radio" name="reviewStars"/>
+							<label title="good"  ></label>
+
+							<input id="star-12" type="radio" name="reviewStars"/>
+							<label title="regular"  ></label>
+
+							<input id="star-11" type="radio" name="reviewStars"/>
+							<label title="poor"  ></label>
+
+							<input id="star-10" type="radio" name="reviewStars"/>
+							<label title="bad"  ></label>
+						</div> 	
+ 					<p>Перфоратор ЗУБР SDS-plus, 2,7 <br>Дж, 0-1000 об/мин, 0-4850 <br> уд/мин, 650Вт, кейс</p>
+						 				
+					<div class="costt">
+						<h6>1 258 руб.</h6>
+						<input type="hidden" value="1258">
+					</div>
+					<div class="new_costt">
+						<h6><span>1 258</span> руб.</h6>
+						<input type="hidden" value="1258" class="valProduct">
+					</div> 	
+					<button class="to_cartt"  id="toCart"   >в корзину</button>				
+ 				</li> 	
+ 				<li class="list_it_prod">
+ 					<div class="image">
+ 						<a href="">
+ 							<img src="img/content/product/p3.png" alt="">
+ 						</a>
+ 					</div>
+ 					<div class="reviewStars-input">
+							<input id="star-4" type="radio" name="reviewStars"/>
+							<label title="gorgeous" for="star-4"></label>
+
+							<input id="star-3" type="radio" name="reviewStars"/>
+							<label title="good" for="star-3"></label>
+
+							<input id="star-2" type="radio" name="reviewStars"/>
+							<label title="regular" for="star-2"></label>
+
+							<input id="star-1" type="radio" name="reviewStars"/>
+							<label title="poor" for="star-1"></label>
+
+							<input id="star-0" type="radio" name="reviewStars"/>
+							<label title="bad" for="star-0"></label>
+						</div> 	
+ 					<p>Перфоратор ЗУБР SDS-plus, 2,7 <br>Дж, 0-1000 об/мин, 0-4850 <br> уд/мин, 650Вт, кейс</p>
+						 				
+					<div class="costt">
+						<h6>1 258 руб.</h6>
+						<input type="hidden" value="1258">
+					</div>
+					<div class="new_costt">
+						<h6><span>1 258</span> руб.</h6>
+						<input type="hidden" value="1258" class="valProduct">
+					</div> 	
+					<button class="to_cartt" id="toCart"  >в корзину</button>				
+ 				</li> 	
+ 				<li class="list_it_prod">
+ 					<div class="image">
+ 						<a href="">
+ 							<img src="img/content/product/p4.png" alt="">
+ 						</a>
+ 					</div>
+ 					<div class="reviewStars-input">
+							<input id="star-4" type="radio" name="reviewStars"/>
+							<label title="gorgeous" for="star-4"></label>
+
+							<input id="star-3" type="radio" name="reviewStars"/>
+							<label title="good" for="star-3"></label>
+
+							<input id="star-2" type="radio" name="reviewStars"/>
+							<label title="regular" for="star-2"></label>
+
+							<input id="star-1" type="radio" name="reviewStars"/>
+							<label title="poor" for="star-1"></label>
+
+							<input id="star-0" type="radio" name="reviewStars"/>
+							<label title="bad" for="star-0"></label>
+						</div> 	
+ 					<p>Перфоратор ЗУБР SDS-plus, 2,7 <br>Дж, 0-1000 об/мин, 0-4850 <br> уд/мин, 650Вт, кейс</p>
+						 				
+					<div class="costt">
+						<h6>1 258 руб.</h6>
+						<input type="hidden" value="1258">
+					</div>
+					<div class="new_costt">
+						<h6><span>1 258</span> руб.</h6>
+						<input type="hidden" value="1258" name="cost" class="valProduct">>
+					</div> 	
+					<button class="to_cartt" id="toCart" >в корзину</button>				
+ 				</li> 										
+ 			</ul>
  		</div>
  
-	</div>
+	</div> 					
 </div>
-
-
 
 <footer>
 	<div class="footer_top">
@@ -520,7 +759,9 @@
 
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
- 
+
+<script src="js/jquery.easytabs.min.js"></script>  
+   
 <script src="js/script.js"></script>
  
  
