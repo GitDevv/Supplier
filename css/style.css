@@ -101,7 +101,7 @@ header .callback {
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #37447c;
-	font-weight: 400;
+	font-weight: 500;
 	background-color: #fff;
 	border: 1px solid rgba(74, 85, 132,0.3);
 	display: inline-block;
@@ -196,7 +196,20 @@ header .nav_menu {
 	position: relative;
 	z-index: 200;
 }
- 
+a,
+ .list_catalog a h5,
+footer button,
+*{
+	transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	
+}
+.catalog > li > a:hover{
+	background: #d43115;
+} 
 .catalog > li > a img{
 	position: absolute;
 	right: 25px;
@@ -204,7 +217,7 @@ header .nav_menu {
 }
 
 .list_catalog {
-	background: #ff4c2d;
+ 	background: #ff4c2d;
 	width: 100%;
 	box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);
 	-moz-box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);
@@ -270,6 +283,10 @@ header .nav_menu {
 	border-bottom: 1px solid #e53516;	
 	font-size: 15px;
 	color: #fdc82b;	
+	background: #ff4c2d;	 
+}
+.list_catalog > li > a:hover{
+	background: #fd6146;	
 }
 .list_catalog > li > a h5{
 	font-size: 15px;
@@ -304,6 +321,10 @@ header .nav_menu {
 	font-size: 15px;
 	color: #fdc82b;	
 	margin-top: 10px;
+}
+.list_catalog a:hover h5{
+	color: #fff;	
+	
 }
  .list_catalog a h5{
 	font-size: 14px;
@@ -352,6 +373,9 @@ header .nav_page a {
 	text-decoration: none;
 	line-height: 55px;
 }
+header .nav_page a:hover{
+	color: #4a5584;
+}
 header .nav_page a span{
 	font-size: 15px;
 	height: 55px;
@@ -398,6 +422,9 @@ header .nav_inside li a{
 
 header.product .nav_inside ul{
 	margin-left: 0;
+}
+header .nav_inside li a:hover{
+	opacity: 1;
 }
 /*footer*/
 footer .footer_top {
@@ -450,6 +477,9 @@ footer button {
 	cursor: pointer;
 	margin-left: 10px;
 }
+footer button:hover{
+	opacity: 0.9;
+}
 footer p {
 	font-size: 12px;
 	color: #e6e5e6;
@@ -480,7 +510,7 @@ footer .container .nav_footer ul li {
 }
 footer .container .nav_footer ul a {
 	font-size: 12px;
-	font-weight: 400;
+	font-weight: 500;
 	text-decoration: none;
 	color: #414141;
 	width: 75%;
@@ -488,6 +518,9 @@ footer .container .nav_footer ul a {
 	margin-bottom: 14px;
 	vertical-align: TOP;
  	
+}
+footer .container .nav_footer ul a:hover {
+	color: #4a5584;
 }
 footer .container .nav_footer.catalog li:last-child {
 	list-style: none; 
@@ -500,11 +533,15 @@ footer .nav_footer.social{
 	padding-left: 35px;
 	width: 18%;
 }
+
 footer .nav_footer.social ul li {
 	list-style-type: none;
 	list-style: none;
 	display: inline-block;
 	margin-right: 12px;
+}
+footer .nav_footer.social ul li:hover{
+	opacity: 0.85;
 }
 footer .nav_footer.social ul li:last-child {
 	margin-right: 0;
@@ -587,9 +624,16 @@ footer{
     width: 295px;
 	margin-right: 10px;
 	box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);
+	-o-box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);	
 	-moz-box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);
 	-webkit-box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);	
 	margin-bottom: 10px;
+}
+.list_content li:hover{
+	box-shadow: 0 0px 7px rgba(60, 60, 60,0.5);
+	-o-box-shadow: 0 0px 7px rgba(60, 60, 60,0.5);	
+	-moz-box-shadow: 0 0px 7px rgba(60, 60, 60,0.5);
+	-webkit-box-shadow: 0 0px 7px rgba(60, 60, 60,0.5);	
 }
 .list_content li:nth-child(3n){
 	margin-right: 0;
@@ -611,7 +655,7 @@ footer{
 	vertical-align: middle;
 }
 .list_content li .title{
-	font-size: 15px;
+	font-size: 14px;
 	display: block;
 	height: 55px;
 	text-align: center;
@@ -622,7 +666,9 @@ footer{
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
 } 
-
+.list_content li:hover .title{
+	background: #de3f22;
+}
 
 /*****************/
 .info_product{
@@ -1101,6 +1147,9 @@ button.to_cartt{
 	cursor: pointer;
 	padding-left: 15px;
 	
+}
+button.to_cartt:hover{
+	opacity: 0.8;
 }
 .list .image{
 	width: 100%;
@@ -1948,4 +1997,7 @@ button.to_cartt{
 }
 .to_buy_this.filter_list_tov .list li:nth-child(4n) {
         border-right: 1px solid #dfdfdf;
+}
+.list_prod_lv2 a:hover h4{
+	color: #1b275c;
 }
