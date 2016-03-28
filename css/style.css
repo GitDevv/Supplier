@@ -973,7 +973,7 @@ footer{
 .subscription_prod {
 	width: 100%;
 	height: 94px;
-	margin: 15px 0;
+	margin: 10px 0;
  	background: url(../img/content/product/bg_rss.png) center no-repeat;
 	line-height: 94px;
 	box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);
@@ -1237,6 +1237,9 @@ button.to_cartt{
 }
 
 /******index******/
+.content.gen_page{
+	padding-bottom: 0;
+}
 .gen_page .list_catalog{
 	padding: 10px 0 16px;
 }
@@ -1260,7 +1263,9 @@ button.to_cartt{
 	position: relative;
 	margin-bottom: 12px;
 }
-.index_top .carousel {
+.index_top .carousel,
+.sale .left,
+.sale .to_buy_this.right{
 	box-shadow: 0 0px 5px rgba(60, 60, 60,0.2);
 	-ms-box-shadow: 0 0 5px rgba(60, 60, 60,0.2);
 	-moz-box-shadow: 0 0 5px rgba(60, 60, 60,0.2);
@@ -1391,12 +1396,17 @@ button.to_cartt{
 	opacity: 0;
 	cursor: pointer;	
 }
-
+.list_it_prod{
+	vertical-align: top;
+}
 .list_it_prod .it_tab{
 	display: inline-block;
 	position: absolute;
 	left: 20px;
 	top:0px;
+	width: 52px;
+	height: 52px;
+	
 }
 .gen_page .list_it_prod  .image{
 	margin-bottom: 20px;
@@ -1435,4 +1445,210 @@ button.to_cartt{
 .gen_page .list .new_costt h6 {
     font-size: 15px;
     color: #000;
+}
+.list_it_prod.percent  .it_tab{
+	background: url(../img/index/10.png) center no-repeat;
+}
+.list_it_prod.new  .it_tab{
+	background: url(../img/index/new.png) center no-repeat;
+}
+
+/*sale*/
+.sale {
+	margin: 10px 0;
+}
+.sale .left {
+	background-color: #fff;
+	width: 296px;
+	height: 360px;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.sale .left .title {
+	width: 281px;
+	height: 51px;
+	margin-top: 10px;
+	background: url(../img/index/title.png) center left no-repeat;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 51px;
+	padding-left: 20px;
+	font-weight: 600;
+	position: relative;
+	z-index: 100;
+}
+.sale .left .image {
+	position: absolute;
+	width: 296px;
+	top: 0;
+	z-index: 90;
+	left: 0;
+	bottom: 0;
+	
+}
+.sale .left  h3 {
+	font-size: 16px;
+	color: #171717;
+	position: relative;
+	z-index: 91;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 8px 20px 5px;
+}
+.sale .left  h4 {
+	font-size: 30px;
+	color: #f8a047;
+	font-weight: bold;
+	position: relative;
+	z-index: 91;	
+	margin: 0 20px;	
+	line-height: 25px;
+}
+.sale .left  h4 span {
+	font-size: 30px;
+	color: #f8a047;
+	font-weight: bold;
+	position: relative;
+	z-index: 91;	
+}
+.sale .left .bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: -10px;
+	margin: auto;
+}
+.sale .left .sales {
+	position: absolute;
+	bottom: 35px;
+	right: 10px;
+}
+.sale h5 {
+	font-size: 22px;
+	color: rgb(255, 76, 45);
+	font-weight: bold;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 28px;
+	left: 20px;
+	line-height: 24px;
+}
+.sale h5 span {
+	font-size: 22px;
+	color: rgb(255, 76, 45);
+	font-weight: bold;	
+	display: block;
+	text-transform: lowercase
+}
+.sale .right .title{
+	position: relative;
+}
+.sale   .right .title h3 {
+  font-size: 18px;
+  color: rgb(74, 85, 132);
+  font-weight: bold;
+  text-transform: uppercase;
+	display: inline-block;
+
+}
+.sale .right .title  a {
+	display: inline-block;
+	font-size: 12px;
+	text-decoration: none;
+	color: #ff4c2d;
+	text-transform: uppercase;	
+	background: url(../img/index/arrow_catalog.png) center right no-repeat;
+	padding-right: 15px;
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+.sale .to_buy_this.right {
+  width: 894px;
+  height: 360px;
+	display: inline-block;
+}
+.sale .to_buy_this.right li{
+	padding: 0;
+	margin: 0;
+	width: 298px;	
+}
+
+.sale .list_it_prod .image {
+}
+.sale .list_it_prod a {
+}
+.sale .list_it_prod img {
+}
+.sale .list_it_prod label {
+}
+.sale .list_it_prod br {
+}
+.sale .list_it_prod h6 {
+}
+.sale .list_it_prod span {
+}
+.sale .list_it_prod .valProduct {
+}
+.sale .it_tab {
+}
+.sale .it_tab img {
+}
+.sale .it_tab span {
+}
+.sale .reviewStars-input {
+}
+.sale .reviewStars-input label {
+}
+.sale #star-9 {
+}
+.sale #star-8 {
+}
+.sale #star-7 {
+}
+.sale #star-6 {
+}
+.sale #star-5 {
+}
+.sale p {
+}
+.sale p br {
+}
+.sale .new_costt {
+}
+.sale .new_costt h6 {
+}
+.sale .new_costt span {
+}
+.sale .new_costt .valProduct {
+}
+.sale #star-141 {
+}
+.sale #star-131 {
+}
+.sale #star-121 {
+}
+.sale #star-111 {
+}
+.sale #star-101 {
+}
+.sale .costt {
+}
+.sale .costt h6 {
+}
+.sale input {
+}
+.sale #star-41 {
+}
+.sale #star-31 {
+}
+.sale #star-21 {
+}
+.sale #star-11 {
+}
+.sale #star-01 {
 }
